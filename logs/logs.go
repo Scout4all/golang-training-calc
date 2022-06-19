@@ -28,11 +28,11 @@ func D(message ...interface{}) {
 	}
 }
 
-func E(message ...string) {
+func E(message ...interface{}) {
 	var dt = time.Now()
 	var currentTime = dt.Format(dateFormat)
 	for i := 0; i < len(message); i++ {
-		fmt.Println(red + currentTime + ": " + message[i] + reset)
+		fmt.Println(red, currentTime, ": ", message[i], reset)
 	}
 }
 
