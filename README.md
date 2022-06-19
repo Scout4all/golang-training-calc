@@ -1,5 +1,5 @@
 # Golang-training-calc
- 
+ it is my training to learn golang 
 ## Installation
 
 Clone repo then cd <project directory>
