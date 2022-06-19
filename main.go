@@ -31,20 +31,27 @@ func main() {
 			fmt.Scanln(&dump)
 		}
 		userInputs = append(userInputs, userInput)
-		logs.D("please enter operator + - / * ")
+		/*-- underdev --
+		comment if condition if you going for advanced calculator
+		 --- underdev
+		*/
+		if i != 1 {
+			logs.D("please enter operator + - / * ")
 
-		for isNotValidOperator {
-			fmt.Scan(&operator)
-			if validateOperatiors(operator) {
-				isNotValidOperator = false
+			for isNotValidOperator {
+				fmt.Scan(&operator)
+				if validateOperatiors(operator) {
+					isNotValidOperator = false
+				}
 			}
+
+			//-- underdev -- if advanced calculator uncomment this --- underdev
+			// if operator == "=" {
+			// 	calc(userInputs, operators)
+			// 	break
+			// }
+			operators = append(operators, operator)
 		}
-		//-- underdev -- if advanced calculator uncomment this --- underdev
-		// if operator == "=" {
-		// 	calc(userInputs, operators)
-		// 	break
-		// }
-		operators = append(operators, operator)
 		//if 1 operation calculator uncomment this
 		if i == 1 {
 			calc(userInputs, operators)
